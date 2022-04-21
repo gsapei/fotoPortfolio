@@ -1,0 +1,5 @@
+{% for foto in fotos %}
+    <h1>{{foto.titulo}}</h1>
+    <h2>{{foto.descripcion}}</h2>
+    <img src="{{foto.imagen.url}}"/>
+{% endfor %}
