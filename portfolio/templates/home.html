@@ -1,5 +1,12 @@
-{% for foto in fotos %}
-    <h1>{{foto.titulo}}</h1>
-    <h2>{{foto.descripcion}}</h2>
-    <img src="{{foto.imagen.url}}"/>
-{% endfor %}
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% for foto in fotos %}
+        <div class="grid-item">
+            <img src="{{foto.imagen.url}}" alt="{{foto.titulo}}"/>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}
+
