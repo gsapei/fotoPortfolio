@@ -1,7 +1,34 @@
-* { box-sizing: border-box; }
+@font-face {
+  font-family:brandon-grotesque;
+  src:url(https://use.typekit.net/af/a96fa9/000000000000000077359de4/30/l?subset_id=2&fvd=n1&v=3) format("woff2"),
+  url(https://use.typekit.net/af/a96fa9/000000000000000077359de4/30/d?subset_id=2&fvd=n1&v=3) format("woff"),
+  url(https://use.typekit.net/af/a96fa9/000000000000000077359de4/30/a?subset_id=2&fvd=n1&v=3) format("opentype");
+  font-weight:200;
+  font-style:normal;
+  font-stretch:normal;
+  font-display:auto;
+}
+
+@font-face {
+  font-family:europa;
+  src:url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),
+  url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/d?subset_id=2&fvd=n3&v=3) format("woff"),
+  url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/a?subset_id=2&fvd=n3&v=3) format("opentype");
+  font-weight:300;
+  font-style:normal;
+  font-stretch:normal;
+  font-display:auto;
+ }
+
+* { 
+  box-sizing: border-box; 
+}
 
 .contenedor{
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .grid:after {
@@ -57,3 +84,36 @@
   max-width: 100%;
   padding: 5px;
 }
+
+.grid-item:hover {
+  filter: brightness(50%);
+}
+
+.grid-item a{
+  cursor: zoom-in;
+}
+
+.navbar{
+  background-color: #fafdff;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 100px;
+  font-family: europa;
+}
+
+.navbar-brand{
+  font-size: 30pt;
+  font-weight: bolder;
+  font-family: brandon-grotesque;  
+}
+
+.footer {
+  font-family: europa;
+  display: flex;
+  padding: 10px;
+  padding-left: 35px;
+  bottom: 0px;
+  height: 50px;
+  width: 100vw;
+}
+

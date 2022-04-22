@@ -1,9 +1,10 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+
     {% for foto in fotos %}
         <div class="grid-item">
-            <img src="{{foto.imagen.url}}" alt="{{foto.titulo}}"/>
+            <a href="#"><img src="{{foto.imagen.url}}" alt="{{foto.titulo}}"/></a>
         </div>
     {% endfor %}
 
