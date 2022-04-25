@@ -1,21 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
       <span class="navbar-brand">STRINGHINI GONZALO</span>
       <button class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNavAltMarkup" 
-        aria-controls="navbarNavAltMarkup" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"/>
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-          <a class="nav-link" href="#">SOBRE MI</a>
+          <a class="nav-link" href="{% url 'home' %}">INICIO</a>
+          <a class="nav-link" href="{% url 'about' %}">SOBRE MI</a>
           <a class="nav-link" href="#">CONTACTO</a>
         </div class="me-auto">
       </div>
-    </div>
   </nav>

@@ -31,6 +31,29 @@
     padding-right: 30px;
 }
 
+.navbar{
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100px;
+  font-family: europa;
+}
+
+.navbar-brand{
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: brandon-grotesque;  
+}
+
+.footer {
+  font-family: europa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+  height: 50px;
+  width: 100%;
+}
+
 .grid:after {
   content: '';
   display: block;
@@ -41,13 +64,16 @@
 .grid-item {
   width: 33.333%;
 }
+
 @media (max-width: 575px) {
+  .navbar-brand{ font-size: 17pt; }
   .grid-sizer,
   .grid-item {
     width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .navbar-brand{ font-size: 20pt; }
   .grid-sizer,
   .grid-item {
     width: 50%;
@@ -57,18 +83,21 @@
 /* To change the amount of columns on larger devices, uncomment the code below */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand{ font-size: 25pt; }
   .grid-sizer,
   .grid-item {
     width: 33.333%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand{ font-size: 25pt; }
   .grid-sizer,
   .grid-item {
     width: 25%;
   }
 }
 @media (min-width: 1200px) {
+  .navbar-brand{ font-size: 30pt; }
   .grid-sizer,
   .grid-item {
     width: 25%;
@@ -93,27 +122,7 @@
   cursor: zoom-in;
 }
 
-.navbar{
-  background-color: #fafdff;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 100px;
-  font-family: europa;
+#navbarSupportedContent{
+  z-index: 1000;
+  background-color: rgb(255, 255, 255,0.9)
 }
-
-.navbar-brand{
-  font-size: 30pt;
-  font-weight: bolder;
-  font-family: brandon-grotesque;  
-}
-
-.footer {
-  font-family: europa;
-  display: flex;
-  padding: 10px;
-  padding-left: 35px;
-  bottom: 0px;
-  height: 50px;
-  width: 100vw;
-}
-
