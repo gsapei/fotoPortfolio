@@ -1,23 +1,41 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-      <span class="navbar-brand">STRINGHINI GONZALO</span>
-      <button class="navbar-toggler btn btn-sm" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navbarSupportedContent" 
-      aria-controls="navbarSupportedContent" 
-      aria-expanded="false" 
-      aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <span class="navbar-brand">SAPEI GONZALO</span>
+    <button class="navbar-toggler btn btn-sm" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="bi-list"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="{% url 'home' %}">INICIO</a>
-          <a class="nav-link" href="{% url 'about' %}">SOBRE MI</a>
-          <a class="nav-link" href="https://www.instagram.com/gsapei/" target="_blank"><i class="bi-instagram"></i></a>
-          <a class="nav-link" href="https://www.youtube.com/channel/UCM0-ECPO79IZHA1-jZZxpnw" target="_blank"><i class="bi-youtube"></i></a>
-          <a class="nav-link" href="https://api.whatsapp.com/send?phone=5493424877744" target="_blank"><i class="bi-whatsapp"></i></a>
-          <a class="nav-link" href="mailto:gsapei@gmail.com"><i class="bi-envelope"></i></a>
-        </div class="me-auto">
-      </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav ms-auto">
+        <div class="row">
+        
+          <div class="col">
+            <a class="nav-link" href="{% url 'home' %}">INICIO</a>
+          </div>
+        
+          <div class="col">
+            <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+          </div>
+
+          <div class="col">
+            <a class="nav-link" href="https://www.instagram.com/gsapei/" target="_blank"><i class="bi-instagram"></i></a>
+          </div>
+
+          <div class="col">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCM0-ECPO79IZHA1-jZZxpnw" target="_blank"><i class="bi-youtube"></i></a>
+          </div>
+
+          <div class="col">
+            <a class="nav-link" href="mailto:gsapei@gmail.com"><i class="bi-envelope"></i></a>
+          </div>
+
+        </div>
+
+      </div class="me-auto">
+    </div>
+</nav>

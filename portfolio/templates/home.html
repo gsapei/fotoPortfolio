@@ -4,7 +4,7 @@
 <div class="grid">
     {% for foto in fotos %}
         <div class="grid-item">
-            <a href="{% url 'detalle_foto' foto.id %}" data-bs-toggle="modal" data-bs-target="#myModal" ><img src="{{foto.imagen.url}}" alt="{{foto.titulo}}" style="border-radius: 8px;"/></a>
+            <a href="{% url 'detalle_foto' foto.id %}" data-bs-toggle="modal" data-bs-target="#myModal" ><img src="{{foto.imagen.url}}" alt="{{foto.titulo}}" style="border-radius: 7px;"/></a>
         </div>
     {% endfor %}
 </div>

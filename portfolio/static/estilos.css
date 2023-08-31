@@ -28,7 +28,6 @@
 }
 
 .navbar{
-  padding-top: 30px;
   padding-left: 5px;
   padding-right: 5px;
   height: 70px;
@@ -63,35 +62,6 @@
 }
 
 .grid-item {
-  width: 33.333%;
-}
-
-@media (max-width: 575px) {
-  .navbar-brand{ font-size: 17pt; }
-  .grid-item {
-    width: 100%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .navbar-brand{ font-size: 20pt; }
-  .grid-item { width: 50%; }
-  .navbar { padding-top: 25px;}
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .navbar-brand{ font-size: 25pt; }
-  .grid-item { width: 33.333%; }
-  .navbar { padding-top: 18px;}
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .navbar-brand{ font-size: 25pt; }
-  .grid-item { width: 25%; }
-}
-@media (min-width: 1200px) {
-  .navbar-brand{ font-size: 30pt; }
-  .grid-item { width: 25%; }
-}
-
-.grid-item {
   float: left;
 }
 
@@ -106,6 +76,49 @@
 
 .grid-item a{
   cursor: zoom-in;
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    padding-top: 25px;
+  }
+  .navbar-brand{ font-size: 17pt; }
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .navbar-brand{ font-size: 20pt; }
+  .grid-item { width: 50%; }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .navbar-brand{ font-size: 25pt; }
+  .grid-item { width: 33.333%; }
+  .navbar { padding-top: 18px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .navbar-brand{ font-size: 25pt; }
+  .grid-item { width: 33.333%; }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .navbar-brand{ font-size: 30pt; }
+  .grid-item { width: 33.333%; }
 }
 
 #navbarSupportedContent{
@@ -144,4 +157,8 @@ body .modal-dialog { /* Width */
 
 .modal-backdrop { opacity:0.7 !important; }
 
-
+.about{
+  text-align: justify; 
+  text-justify: inter-word;
+  font-size: 10pt;
+}

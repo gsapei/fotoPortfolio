@@ -1,8 +1,5 @@
 from django.shortcuts import get_object_or_404, render
 from .models import Foto
-import random
-
-# Create your views here.
 
 def about(request):
     return render(request,'about.html')
